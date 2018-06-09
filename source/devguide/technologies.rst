@@ -8,7 +8,7 @@ Contact-based smartcards have been around since the 1980s, and today most of us 
 
 These cards are mostly built to standards from the ISO 7816 series, which defines the physical, electrical and protocol characteristics of these cards. It also specifies several frameworks for applications involving cryptography and data storage.
 
-Cards have supported multiple applications for a long time, and so the ISO specifications also specify applet naming using binary AIDs as well as a global registry infrastructure with both an international registry and various national registries.
+Cards have supported multiple applications for a long time, and so the ISO specifications specify applet naming using binary AIDs as well as a global registry infrastructure with both an international registry and various national registries.
 
 Today smartcards are also integrated as components in devices with different form factors such as USB tokens, microSD cards, NFC devices and mobile phones. These form factors have considerable influence on how the cards are used, but the technology remains essentially the same.
 
@@ -39,9 +39,19 @@ The specifications also define a Java package for common card services. It provi
 NFC
 ---
 
-Near-Field Communications (NFC) allows contactless communication between various forms of devices, including smartcards in both card and token form.
+Near-Field Communications (NFC) allows contactless communication between various forms of devices, including smartcards in both card and token form. This communication can either be in the form of smartcard commands or by using or emulating an NFC memory device, which are actually based on a small set of tightly specified smartcard commands. The memory variant is used for what is commonly called an "NFC Tag", which will contain a so-called NDEF record. These records can contain simple data objects such as strings, URLs and vCard records.
+
+In the JavaCard world NFC is just another interface to the smartcard. It uses the same protocols as contact-based interfaces. The main practical difference is that the card only remains powered for a short time. A smartcard application can determine what interface a command came from and enact appropriate policy to balance out the ad-hoc nature of NFC card usage.
+
+It is possible to emulate an NFC memory device on a smartcard, allowing for the transfer of NDEF records. Some smartcards include additional hardware to facilitate doing so, but this is generally not required unless you need to be compatible to proprietary NFC security technologies such as Mifare.
+
+NFC is not limited to phone-and-card and card-and-terminal applications. There are large-scale applications of NFC where the phone actually acts as an NFC command target (mobile-phone payment). Other applications use stationary devices that act as an NFC target so that the interaction is between a phone and a stationary object - possibly using online transactions (used in the travel industry for tracking-based fare solutions).
 
 SIM Toolkit
 -----------
 
-The SIM Toolkit standard allows the development of JavaCard applications specifically for SIM cards.
+The SIM Application Toolkit (commonly called SIM Toolkit or STK) standard allows the development of JavaCard applications specifically for SIM cards, allowing the development of card applications providing value-added services and provider services integration.
+
+STK applications can provide interactive text-oriented menus that will be displayed by the phone. They can also implement USSD dialing codes. It is also possible to expose SIM applications to applications on the host phone. All of this is done through STK-specific JavaCard APIs and SIM-specific smartcard commands.
+
+In practice, this technology is only available to mobile phone network operators and their subcontractors. It might be possible to create a "dummy SIM card" that allows only SIM Toolkit applications but no actual network use. This would enable the use of SIM slots in Dual-SIM phones for security purposes.

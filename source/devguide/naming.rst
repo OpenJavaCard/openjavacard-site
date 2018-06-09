@@ -39,7 +39,7 @@ Assigned by ISO             Assigned by registry  Managed by registrant
 Axxx = ISO, Dxxx = National Sequential assignment
 =========================== ===================== =====================
 
-The prefix and the registrant number form the RID. For international registrations the whole 5-byte RID is specified by the ISO registry, including the unspecified bytes in the prefix. For national registries the prefix specifies the ISO 3166-1 country code of the respective country in BCD form. For example Denmark uses D208 while Germany uses D276.
+The prefix and the registrant number form the RID. For international registrations the whole 5-byte RID is specified by the ISO registry. For national registries the prefix specifies the ISO 3166-1 country code of the respective country in BCD form. For example Denmark uses D208 while Germany uses D276.
 
 AID Registries
 --------------

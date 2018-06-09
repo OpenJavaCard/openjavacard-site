@@ -1,2 +1,2 @@
-Vendor Contact
-==============
+Vendor Relations
+================

@@ -6,8 +6,8 @@ Java SDK
 
 JavaCard is based on Java, and so are most tools used for JavaCard development. As such you will need a recent JDK, which means OpenJDK or the Oracle JDK.
 
-JavaCard Kit / SDK
-------------------
+JavaCard Kit
+------------
 
 At the moment you will need the so-called JavaCard Kit, a closed-source toolkit published by Oracle that contains a CAP converter and verifier, the JavaCard class libraries and various other tools.
 
