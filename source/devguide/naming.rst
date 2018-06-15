@@ -46,8 +46,13 @@ AID Registries
 
 The following is a list of known official national registries.
 
-======= ========= ============== ================= =========================================
-Country Authority Registry       Fee               Website
-======= ========= ============== ================= =========================================
-Germany DIN e.V.  Fraunhofer SIT EUR 100 excl. VAT https://www.kartenbezogene-identifier.de/
-======= ========= ============== ================= =========================================
+====== ======= ========= ============== ================= =========================================
+Prefix Country Authority Registry       Fee               Website
+====== ======= ========= ============== ================= =========================================
+D276   Germany DIN e.V.  Fraunhofer SIT EUR 100 excl. VAT https://www.kartenbezogene-identifier.de/
+====== ======= ========= ============== ================= =========================================
+
+Card Identification
+-------------------
+
+Some cards support an option for unique card identification that is based on a pair of identifiers called the issuer identification number (IIN) and the card image number (CIN).

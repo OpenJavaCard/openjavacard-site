@@ -4,6 +4,7 @@ Software Projects
 .. toctree::
    :hidden:
 
+   ndef
    smartcardio
    tools
    libraries
