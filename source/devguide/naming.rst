@@ -4,7 +4,11 @@ Naming
 Java Packages
 -------------
 
-As with any other Java-based platform, code is organized using the hierarchical package namespace.
+As with any other Java-based platform, code is organized using the hierarchical package namespace. It is good practice to use an internet domain controlled by you as the base for your package namespace.
+
+In JavaCard packages also provide the granularity at which software can be installed. A JavaCard package directly corresponds to a Java package, which is given an additional name in the form of an AID.
+
+If you want to share code between packages, for example in a library, you will have to maintain a namespace of package names and corresponding AIDs, all of which should be unique within the respective scope. It is recommended that you use a properly formed AID as detailed below.
 
 AID Naming
 ----------
@@ -29,17 +33,16 @@ The namespace for these AIDs is specified and maintained by ISO. Assignment happ
 
 The RID can be combined with a so-called PIX, defined by the registrant, to form a complete AID. It is the responsibility of the registrant to define a future-proof assignment scheme for AIDs. A reasonable practice is to divide the available 11-byte PIX space, first by purpose and then by application. The remaining PIX can be used for protocol versioning and serial numbers, allowing several independent and isolated instances of the same application to exist on the same card by having different serial number suffixes.
 
-This makes for the following basic structure:
+There are different prefixes for RIDs assigned by ISO (starting with 0xA) and national registries (starting with 0xD). International RIDs are assigned sequentially by ???. National RIDs indicate the country using the ISO-3166 3-digit country code in BCD form after the 0xD prefix. For example, Denmark has the 3-digit code 208 and uses the prefix 0xD208, while Germany uses prefix 0xD276 corresponding to code 276. Note that the assigned RID is 5 bytes long in both cases.
 
-=========================== ===================== =====================
-Prefix                      Registrant            PIX
-=========================== ===================== =====================
-2 bytes                     3 bytes               0-11 bytes
-Assigned by ISO             Assigned by registry  Managed by registrant
-Axxx = ISO, Dxxx = National Sequential assignment
-=========================== ===================== =====================
-
-The prefix and the registrant number form the RID. For international registrations the whole 5-byte RID is specified by the ISO registry. For national registries the prefix specifies the ISO 3166-1 country code of the respective country in BCD form. For example Denmark uses D208 while Germany uses D276.
+=========================== =====================
+RID                         PIX
+=========================== =====================
+5 bytes                     0-11 bytes
+Assigned by registry        Managed by registrant
+A... = International
+Dccc = National
+=========================== =====================
 
 AID Registries
 --------------
