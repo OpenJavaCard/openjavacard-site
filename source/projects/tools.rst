@@ -5,9 +5,4 @@ OpenJavaCard Tools is a toolkit for JavaCard development that provides a GlobalP
 
 With this project we want to provide a solid one-stop toolkit for JavaCard development and enable others to improve development support by implementing IDE support, build system plugins and provisioning systems.
 
-Command-Line Tool
------------------
-
-Library Support
----------------
-
+Be sure to take a look at our `GitHub project <https://github.com/OpenJavaCard/openjavacard-tools>`_!
