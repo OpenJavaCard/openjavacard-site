@@ -8,7 +8,7 @@ We want to make JavaCard development easier, more attractive and more approachab
 What?
 -----
 
-JavaCard is a set of standards and technologies for developing applets that run on smartcards. It is used in devices such as credit and debit cards, SIM cards and other security tokens. You can also buy blank programmable cards and tokens that you can program yourself, which is what this project is about.
+`JavaCard <https://en.wikipedia.org/wiki/JavaCard>`_ is a set of standards and technologies for developing `applets <https://en.wikipedia.org/wiki/Applet>`_ that run on `smart cards <https://en.wikipedia.org/wiki/Smart_cards>`_. It is used in devices such as credit and debit cards, SIM cards and other security tokens. You can also buy blank programmable cards and tokens that you can program yourself, which is what this project is about.
 
 Our main goal is to provide a consistent development toolchain for JavaCard applets and libraries based on open-source code written by ourselves and others, and we are also building a set of libraries that should make JavaCard development a little easier.
 

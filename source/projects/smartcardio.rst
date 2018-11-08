@@ -1,5 +1,5 @@
-SmartcardIO
-===========
+OJC SmartcardIO
+===============
 
 OpenJavaCard SmartcardIO is an implementation of the javax.smartcardio API for Java-based environments that do not provide one. The current prime example of this is Android, where this library allows porting of Java smartcard applications to platform devices without reimplementing smartcard client code.
 
