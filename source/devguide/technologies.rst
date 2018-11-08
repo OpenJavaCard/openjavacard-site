@@ -54,4 +54,4 @@ The SIM Application Toolkit (commonly called SIM Toolkit or STK) standard allows
 
 STK applications can provide interactive text-oriented menus that will be displayed by the phone. They can also implement USSD dialing codes. It is also possible to expose SIM applications to applications on the host phone. All of this is done through STK-specific JavaCard APIs and SIM-specific smartcard commands.
 
-In practice, this technology is only available to mobile phone network operators and their subcontractors. It might be possible to create a "dummy SIM card" that allows only SIM Toolkit applications but no actual network use. This would enable the use of SIM slots in Dual-SIM phones for security purposes.
+In practice, this technology is only available to mobile phone network operators and their subcontractors. This does, however, include operators of open-source GSM networks.

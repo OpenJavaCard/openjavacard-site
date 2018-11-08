@@ -40,7 +40,7 @@ RID                         PIX
 =========================== =====================
 5 bytes                     0-11 bytes
 Assigned by registry        Managed by registrant
-A... = International
+Axxx = International
 Dccc = National
 =========================== =====================
 

@@ -10,6 +10,7 @@ Be warned that the JavaCard ecosystem is, at present, not an easy one to get int
 You will likely need some experience with Java development and a background in system programming to follow this guide.
 
 .. toctree::
+
    applications
    technologies
    hardware
