@@ -6,4 +6,3 @@ OpenJavaCard SmartcardIO is an implementation of the javax.smartcardio API for J
 On Android, or main goal is to provide excellent NFC support. We are also interested in building support for Bluetooth readers and integrated Security Elements so as to allow use of all of these through a standardized API.
 
 See our `GitHub project <https://github.com/OpenJavaCard/openjavacard-smartcardio>`_ for more information.
-
