@@ -56,6 +56,9 @@ project = u'OpenJavaCard'
 author = u'promovicz'
 copyright = u'2018, promovicz'
 
+# Base URL of website
+site_url = 'https://openjavacard.org/'
+
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
