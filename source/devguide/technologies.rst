@@ -1,8 +1,8 @@
 Technologies
 ============
 
-ISO7816
--------
+ISO 7816
+--------
 
 Contact-based smartcards have been around since the 1980s, and today most of us will own several.
 
@@ -12,6 +12,28 @@ Cards have supported multiple applications for a long time, and so the ISO speci
 
 Today smartcards are also integrated as components in devices with different form factors such as USB tokens, microSD cards, NFC devices and mobile phones. These form factors have considerable influence on how the cards are used, but the technology remains essentially the same.
 
+.. table:: Standards in the ISO 7816 series
+   :widths: auto
+
+   ===========  =======================================================================  =========
+   Standard     Title                                                                    Relevance
+   ===========  =======================================================================  =========
+   ISO 7816-1   Cards with contacts - Physical characteristics                           Yes.
+   ISO 7816-2   Cards with contacts - Dimensions and location of the contacts            Yes.
+   ISO 7816-3   Cards with contacts - Electrical interface and transmission protocols    Yes.
+   ISO 7816-4   Organization, security and commands for interchange
+   ISO 7816-5   Registration of application providers
+   ISO 7816-6   Interindustry data elements for interchange
+   ISO 7816-7   Interindustry commands for Structured Card Query Language (SCQL)         Rare.
+   ISO 7816-8   Commands and mechanisms for security operations
+   ISO 7816-9   Commands for card management
+   ISO 7816-10  Electronic signals and answer to reset for synchronous cards
+   ISO 7816-11  Personal verification through biometric methods
+   ISO 7816-12  Cards with contacts - USB electrical interface and operating procedures  Yes.
+   ISO 7816-13  Commands for application management in a multi-application environment
+   ISO 7816-15  Cryptographic information application
+   ===========  =======================================================================  =========
+
 JavaCard
 --------
 
@@ -19,7 +41,41 @@ Since the 1990s an increasing number of smartcards are based on JavaCard, a tech
 
 These specifications define a Java runtime and machine environment as well as some basic library packages, a considerable portion of which are optional. There are two feature variants of JavaCard, called Classic and Connected. The Connected variety includes advanced technologies such as HTTP support and is not widely available.
 
+.. table:: Comparison of JavaCard and JavaSE
+   :widths: auto
+
+   ==========  =========================================  ========================================
+   Feature     JavaCard                                   JavaSE
+   ==========  =========================================  ========================================
+   Memory      10s of kB persistent. Few kB transient.    Megabytes. Gigabytes.
+   GC          Explicit only. Support optional.           Generally available.
+   Types       No float or double. No 32-bit int.         All types available.
+   Arrays      One dimension. Only scalars and Object.    Many dimensions. Any type.
+   Strings     No support at all.                         Always available.
+   Library     Limited. Microcontroller-like.             Huge.
+   Objects     Always persistent. Considered expensive.   Unrestricted use.
+   ==========  =========================================  ========================================
+
 Several specification versions exist. As of 2018 most newer cards support JavaCard 3.0, while previously cards implementing JavaCard 2.1 and 2.2 where most common.
+
+.. table:: Versions of the JavaCard specification
+   :widths: auto
+
+   =======  ========
+   Version  Released
+   =======  ========
+   3.0.5    2015
+   3.0.4    2011
+   3.0.3
+   3.0.2
+   3.0.1    2009
+   2.2.2    2006
+   2.2.1    2003
+   2.2      2002
+   2.1.1    2000
+   2.1      1999
+   =======  ========
+
 
 The specifications include a domain-separation security model as well as sharing of objects between applets, allowing advanced architectures to be implemented.
 
@@ -55,3 +111,4 @@ The SIM Application Toolkit (commonly called SIM Toolkit or STK) standard allows
 STK applications can provide interactive text-oriented menus that will be displayed by the phone. They can also implement USSD dialing codes. It is also possible to expose SIM applications to applications on the host phone. All of this is done through STK-specific JavaCard APIs and SIM-specific smartcard commands.
 
 In practice, this technology is only available to mobile phone network operators and their subcontractors. This does, however, include operators of open-source GSM networks.
+
