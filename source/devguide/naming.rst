@@ -10,6 +10,8 @@ In JavaCard packages also provide the granularity at which software can be insta
 
 If you want to share code between packages, for example in a library, you will have to maintain a namespace of package names and corresponding AIDs, all of which should be unique within the respective scope. It is recommended that you use a properly formed AID as detailed below.
 
+.. _aid-naming:
+
 AID Naming
 ----------
 
@@ -25,6 +27,8 @@ Domain  On-card security domain                  by installing a special-purpose
 Module  Installable module                       by loading a package that contains module/applet definitions
 Package Direct equivalent of a Java package      by loading a CAP file corresponding to the package
 ======= ======================================== =================================================================
+
+.. _aid-structure:
 
 AID Structure
 -------------
@@ -44,18 +48,31 @@ Axxx = International
 Dccc = National
 =========================== =====================
 
+.. _aid-registries:
+
 AID Registries
 --------------
 
-The following is a list of known official national registries.
+Assignment of AIDs is performed by a global hierarchy of registries defined by :ref:`iso7816` standards. Each ISO member nation is supposed to operate a registry under the authority of its respective ISO member organization. Most of these registries seem to be obscure and we have yet to find a useful list.
 
-====== ======= ========= ============== ================= =========================================
-Prefix Country Authority Registry       Fee               Website
-====== ======= ========= ============== ================= =========================================
-D276   Germany DIN e.V.  Fraunhofer SIT EUR 100 excl. VAT https://www.kartenbezogene-identifier.de/
-====== ======= ========= ============== ================= =========================================
+.. table:: List of known official RID registries
+   :widths: auto
+
+   ====== ======= ========= ============== ==================== ================= =========================================
+   Prefix Country Authority Registry       Process              Fee               Website
+   ====== ======= ========= ============== ==================== ================= =========================================
+   D276   Germany DIN e.V.  Fraunhofer SIT Paper                €100 excl. VAT    https://www.kartenbezogene-identifier.de/
+   ====== ======= ========= ============== ==================== ================= =========================================
+
+The OpenJavaCard project is pursuing the creation of an AID registry suitable for open-source use in cooperation with a partner. Stay tuned.
 
 Card Identification
 -------------------
 
 Some cards support an option for unique card identification that is based on a pair of identifiers called the issuer identification number (IIN) and the card image number (CIN).
+
+Card Lifecycle
+--------------
+
+Many (but not all) cards provide a lifecycle record defined by GP (and possibly ISO) called the CPLC (Card Production Life-Cycle).
+

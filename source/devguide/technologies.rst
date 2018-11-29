@@ -1,38 +1,40 @@
 Technologies
 ============
 
+.. _iso7816:
+
 ISO 7816
 --------
 
 Contact-based smartcards have been around since the 1980s, and today most of us will own several.
 
-These cards are mostly built to standards from the ISO 7816 series, which defines the physical, electrical and protocol characteristics of these cards. It also specifies several frameworks for applications involving cryptography and data storage.
+These cards are mostly built to standards from the ISO 7816 series, which defines the physical, electrical and protocol characteristics of these cards. It also specifies several frameworks for applications involving cryptography and data storage, which many applications use as a definition basis.
 
-Cards have supported multiple applications for a long time, and so the ISO specifications specify applet naming using binary AIDs as well as a global registry infrastructure with both an international registry and various national registries.
+Cards have supported multiple applications for a long time, and so the ISO specifications specify applet naming using binary AIDs as well as a global registry infrastructure with both an international registry and various national registries. As of 2018 most of these registries seem to be quite obscure. See :ref:`aid-registries`.
 
 Today smartcards are also integrated as components in devices with different form factors such as USB tokens, microSD cards, NFC devices and mobile phones. These form factors have considerable influence on how the cards are used, but the technology remains essentially the same.
 
 .. table:: Standards in the ISO 7816 series
    :widths: auto
 
-   ===========  =======================================================================  =========
+   ===========  =======================================================================  ================
    Standard     Title                                                                    Relevance
-   ===========  =======================================================================  =========
-   ISO 7816-1   Cards with contacts - Physical characteristics                           Yes.
-   ISO 7816-2   Cards with contacts - Dimensions and location of the contacts            Yes.
-   ISO 7816-3   Cards with contacts - Electrical interface and transmission protocols    Yes.
-   ISO 7816-4   Organization, security and commands for interchange
-   ISO 7816-5   Registration of application providers
+   ===========  =======================================================================  ================
+   ISO 7816-1   Cards with contacts - Physical characteristics                           Card production.
+   ISO 7816-2   Cards with contacts - Dimensions and location of the contacts            Card production.
+   ISO 7816-3   Cards with contacts - Electrical interface and transmission protocols    Card production.
+   ISO 7816-4   Organization, security and commands for interchange                      Common.
+   ISO 7816-5   Registration of application providers                                    Common.
    ISO 7816-6   Interindustry data elements for interchange
    ISO 7816-7   Interindustry commands for Structured Card Query Language (SCQL)         Rare.
    ISO 7816-8   Commands and mechanisms for security operations
    ISO 7816-9   Commands for card management
    ISO 7816-10  Electronic signals and answer to reset for synchronous cards
    ISO 7816-11  Personal verification through biometric methods
-   ISO 7816-12  Cards with contacts - USB electrical interface and operating procedures  Yes.
+   ISO 7816-12  Cards with contacts - USB electrical interface and operating procedures  Card production.
    ISO 7816-13  Commands for application management in a multi-application environment
    ISO 7816-15  Cryptographic information application
-   ===========  =======================================================================  =========
+   ===========  =======================================================================  ================
 
 JavaCard
 --------
@@ -88,9 +90,30 @@ The GlobalPlatform organization is an industry association between various compa
 
 Of specific interest here are the GlobalPlatform card specifications, which specify a set of protocols for loading and managing applets on smartcards. The specifications include a series of secure channel protocols (SCP) and build on the domain-separation model specified in JavaCard.
 
+.. table:: Versions of the GlobalPlatform card specification
+   :widths: auto
+
+   =======  ========
+   Version  Released
+   =======  ========
+   2.1 
+   =======  ========
+
 Using a GlobalPlatform client and the required security keys one can load applications onto a card, create security domains and perform various other operations for key and identity management.
 
 The specifications also define a Java package for common card services. It provides access to GlobalPlatform state, an API for integrating the cards SCP into an application and finally a mechanism for card-global authentication mechanisms.
+
+.. table:: Variants of the GlobalPlatform secure channel protocol
+   :widths: auto
+
+   ========  ============
+   Protocol  Ciphersuite
+   ========  ============
+   SCP01     DES
+   SCP02     3DES
+   SCP03     AES-128
+   SCP10     RSA-PKCS
+   ========  ============
 
 NFC
 ---
