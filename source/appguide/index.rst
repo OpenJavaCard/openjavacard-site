@@ -5,5 +5,6 @@ Application Guide
    :hidden:
 
    ndef
-   oath
-   openpgp
+   otp
+   pgp
+
