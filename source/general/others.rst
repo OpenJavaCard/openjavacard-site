@@ -5,6 +5,13 @@ We are, of course, not the only JavaCard project out there.
 
 This project would never have begun without the previous work of others, who have pioneered both in releasing a lot of the required information and in publishing open source software related to JavaCard development.
 
+Curated JavaCard List
+---------------------
+
+The `curated list <https://github.com/EnigmaBridge/javacard-curated-list>`_ of JavaCard applications by `Enigma Bridge <https://enigmabridge.com/>`_ is the most complete list of JavaCard projects available.
+
+It contains applets, tools, libraries and links to useful code snippets. Be sure to check it out.
+
 JavaCardPro
 -----------
 
