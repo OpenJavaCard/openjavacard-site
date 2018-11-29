@@ -1,3 +1,5 @@
+.. _project-tools:
+
 OJC Tools
 =========
 

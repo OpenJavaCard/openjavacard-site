@@ -1,3 +1,5 @@
+.. _project-smartcardio:
+
 OJC SmartcardIO
 ===============
 

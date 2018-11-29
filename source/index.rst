@@ -26,6 +26,7 @@ Who?
    :hidden:
 
    general/index
+   resources/index
    projects/index
    appguide/index
    devguide/index

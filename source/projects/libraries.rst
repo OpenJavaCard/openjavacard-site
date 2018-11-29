@@ -1,3 +1,5 @@
+.. _project-libraries:
+
 OJC Libraries
 =============
 
