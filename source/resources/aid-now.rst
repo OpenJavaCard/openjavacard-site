@@ -7,6 +7,13 @@ Are you tired of filling out paper forms and paying money to allocate a RID from
 
 Tire no more! AID assignment has entered the 21st century with our self-assignment program "AID Now!".
 
+Using Tools
+-----------
+
+The :ref:`OpenJavaCard Tools <project-tools>` package contains a command for generating AIDs.
+
+Stay tuned for full documentation.
+
 Self-Assignment
 ---------------
 
@@ -29,13 +36,6 @@ An AID is up to 16 bytes long, with 5 bytes being used for the RID. In our assig
    D276000177F2   Self-Assigned Production Libraries
    D276000177F3   Self-Assigned Production Domains
    =============  ==========================================
-
-Using Tools
------------
-
-The :ref:`OpenJavaCard Tools <project-tools>` package contains a command for generating AIDs.
-
-Stay tuned for full documentation.
 
 Justification
 -------------
