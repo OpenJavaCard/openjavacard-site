@@ -138,9 +138,9 @@ html_theme_options = {
     'navbar_pagenav': False,
     'navbar_sidebarrel': False,
     'navbar_links': [
-        ("GitHub", "https://github.com/OpenJavaCard/", True),
+        ('GitHub', 'https://github.com/OpenJavaCard/', True),
     ],
-    'source_link_position': "footer"
+    'source_link_position': 'footer'
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
