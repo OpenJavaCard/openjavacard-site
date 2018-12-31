@@ -1,47 +1,14 @@
 Technologies
 ============
 
-.. _iso7816:
-
-ISO 7816
---------
-
-Contact-based smartcards have been around since the 1980s, and today most of us will own several.
-
-These cards are mostly built to standards from the ISO 7816 series, which defines the physical, electrical and protocol characteristics of these cards. It also specifies several frameworks for applications involving cryptography and data storage, which many applications use as a definition basis.
-
-Cards have supported multiple applications for a long time, and so the ISO specifications specify applet naming using binary AIDs as well as a global registry infrastructure with both an international registry and various national registries. As of 2018 most of these registries seem to be quite obscure. See :ref:`aid-registries`.
-
-Today smartcards are also integrated as components in devices with different form factors such as USB tokens, microSD cards, NFC devices and mobile phones. These form factors have considerable influence on how the cards are used, but the technology remains essentially the same.
-
-.. table:: Standards in the ISO 7816 series
-   :widths: auto
-
-   ===========  =======================================================================  ================
-   Standard     Title                                                                    Relevance
-   ===========  =======================================================================  ================
-   ISO 7816-1   Cards with contacts - Physical characteristics                           Card production.
-   ISO 7816-2   Cards with contacts - Dimensions and location of the contacts            Card production.
-   ISO 7816-3   Cards with contacts - Electrical interface and transmission protocols    Card production.
-   ISO 7816-4   Organization, security and commands for interchange                      Common.
-   ISO 7816-5   Registration of application providers                                    Common.
-   ISO 7816-6   Interindustry data elements for interchange
-   ISO 7816-7   Interindustry commands for Structured Card Query Language (SCQL)         Rare.
-   ISO 7816-8   Commands and mechanisms for security operations
-   ISO 7816-9   Commands for card management
-   ISO 7816-10  Electronic signals and answer to reset for synchronous cards
-   ISO 7816-11  Personal verification through biometric methods
-   ISO 7816-12  Cards with contacts - USB electrical interface and operating procedures  Card production.
-   ISO 7816-13  Commands for application management in a multi-application environment
-   ISO 7816-15  Cryptographic information application
-   ===========  =======================================================================  ================
-
 JavaCard
 --------
 
-Since the 1990s an increasing number of smartcards are based on JavaCard, a technology to run Java on smartcards developed by Sun Microsystems and others. The relevant specifications and corresponding development tools are now maintained by Oracle.
+Since the 1990s an increasing number of smartcards are based on JavaCard, a technology to run Java on smartcards developed by Sun Microsystems and others. The relevant specifications and corresponding development tools are now maintained by Oracle. These specifications define a Java runtime and machine environment as well as some basic library packages, a considerable portion of which are optional. There are two feature variants of JavaCard, called Classic and Connected. The Connected variety includes advanced technologies such as HTTP support and is not widely available.
 
-These specifications define a Java runtime and machine environment as well as some basic library packages, a considerable portion of which are optional. There are two feature variants of JavaCard, called Classic and Connected. The Connected variety includes advanced technologies such as HTTP support and is not widely available.
+One has to keep in mind here that the resources on a smart card are extremely limited. Many cards - even in 2018 - use simple 8/16-bit microcontrollers and have only a few 100 kBytes of memory, of which only a few kBytes are RAM.
+
+The Java language environment available on the platform can hardly be compared to traditional Java on desktops or even embedded platforms such as J2ME.
 
 .. table:: Comparison of JavaCard and JavaSE
    :widths: auto
@@ -49,7 +16,7 @@ These specifications define a Java runtime and machine environment as well as so
    ==========  =========================================  ========================================
    Feature     JavaCard                                   JavaSE
    ==========  =========================================  ========================================
-   Memory      10s of kB persistent. Few kB transient.    Megabytes. Gigabytes.
+   Memory      ~100 kB persistent. ~4 kB transient.       Megabytes. Gigabytes.
    GC          Explicit only. Support optional.           Generally available.
    Types       No float or double. No 32-bit int.         All types available.
    Arrays      One dimension. Only scalars and Object.    Many dimensions. Any type.
@@ -96,7 +63,11 @@ Of specific interest here are the GlobalPlatform card specifications, which spec
    =======  ========
    Version  Released
    =======  ========
-   2.1 
+   2.3
+   2.2.2
+   2.2.1
+   2.2
+   2.1
    =======  ========
 
 Using a GlobalPlatform client and the required security keys one can load applications onto a card, create security domains and perform various other operations for key and identity management.
@@ -106,14 +77,14 @@ The specifications also define a Java package for common card services. It provi
 .. table:: Variants of the GlobalPlatform secure channel protocol
    :widths: auto
 
-   ========  ============
-   Protocol  Ciphersuite
-   ========  ============
-   SCP01     DES
-   SCP02     3DES
-   SCP03     AES-128
-   SCP10     RSA-PKCS
-   ========  ============
+   ========  ============  ============================
+   Protocol  Ciphers       Availability
+   ========  ============  ============================
+   SCP01     DES           Obsolete, still available
+   SCP02     3DES          Commonly available
+   SCP03     AES-128       Available on request
+   SCP10     RSA-PKCS      Available on request
+   ========  ============  ============================
 
 NFC
 ---
@@ -135,3 +106,38 @@ STK applications can provide interactive text-oriented menus that will be displa
 
 In practice, this technology is only available to mobile phone network operators and their subcontractors. This does, however, include operators of open-source GSM networks.
 
+
+.. _iso7816:
+
+ISO 7816
+--------
+
+Contact-based smartcards have been around since the 1980s, and today most of us will own several.
+
+These cards are mostly built to standards from the ISO 7816 series, which defines the physical, electrical and protocol characteristics of these cards. It also specifies several frameworks for applications involving cryptography and data storage, which many applications use as a definition basis.
+
+Cards have supported multiple applications for a long time, and so the ISO specifications specify applet naming using binary AIDs as well as a global registry infrastructure with both an international registry and various national registries. As of 2018 most of these registries seem to be quite obscure. See :ref:`aid-registries`.
+
+Today smartcards are also integrated as components in devices with different form factors such as USB tokens, microSD cards, NFC devices and mobile phones. These form factors have considerable influence on how the cards are used, but the technology remains essentially the same.
+
+.. table:: Standards in the ISO 7816 series
+   :widths: auto
+
+   ===========  =======================================================================  ================
+   Standard     Title                                                                    Relevance
+   ===========  =======================================================================  ================
+   ISO 7816-1   Cards with contacts - Physical characteristics                           Card production.
+   ISO 7816-2   Cards with contacts - Dimensions and location of the contacts            Card production.
+   ISO 7816-3   Cards with contacts - Electrical interface and transmission protocols    Card production.
+   ISO 7816-4   Organization, security and commands for interchange                      Common.
+   ISO 7816-5   Registration of application providers                                    Common.
+   ISO 7816-6   Interindustry data elements for interchange
+   ISO 7816-7   Interindustry commands for Structured Card Query Language (SCQL)         Rare.
+   ISO 7816-8   Commands and mechanisms for security operations
+   ISO 7816-9   Commands for card management
+   ISO 7816-10  Electronic signals and answer to reset for synchronous cards
+   ISO 7816-11  Personal verification through biometric methods
+   ISO 7816-12  Cards with contacts - USB electrical interface and operating procedures  Card production.
+   ISO 7816-13  Commands for application management in a multi-application environment
+   ISO 7816-15  Cryptographic information application
+   ===========  =======================================================================  ================
