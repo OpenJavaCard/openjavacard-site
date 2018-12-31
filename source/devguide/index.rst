@@ -11,7 +11,6 @@ You will likely need some experience with Java development and a background in s
 
 .. toctree::
 
-   applications
    technologies
    hardware
    toolchain
