@@ -22,6 +22,8 @@ We want to do things such as these, and to do that we want to use open tools. To
 Who?
 ----
 
+We are a group of smart card professionals and interested hackers. Anyone may contribute to the project. All our work will be public and free. We will also gladly support research and academic projects as our resources permit.
+
 .. toctree::
    :hidden:
 
