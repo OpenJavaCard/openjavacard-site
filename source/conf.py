@@ -44,10 +44,6 @@ templates_path = ['_templates']
 # source_suffix = ['.rst', '.md']
 source_suffix = '.rst'
 
-# The encoding of source files.
-#
-# source_encoding = 'utf-8-sig'
-
 # The master toctree document.
 master_doc = 'index'
 
@@ -117,9 +113,6 @@ pygments_style = 'sphinx'
 # If true, keep warnings as "system message" paragraphs in the built documents.
 # keep_warnings = False
 
-# If true, `todo` and `todoList` produce output, else they produce nothing.
-todo_include_todos = False
-
 
 # -- Options for HTML output ----------------------------------------------
 
@@ -139,6 +132,7 @@ html_theme_options = {
     'navbar_sidebarrel': False,
     'navbar_links': [
         ('GitHub', 'https://github.com/OpenJavaCard/', True),
+        ('Twitter', 'https://twitter.com/openjavacardorg', True),
     ],
     'source_link_position': 'footer'
 }
