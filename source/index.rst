@@ -15,7 +15,7 @@ Our main goal is to provide a consistent :doc:`development toolchain <projects/t
 Why?
 ----
 
-Running your own code on smartcards allows you to implement your own high-security applications. Authenticate users and customers. Share information privately and with integrity. Build security and trust. Enable privacy for yourself and others.
+Running your own code on smart cards allows you to implement your own high-security applications. Authenticate users and customers. Share information privately and with integrity. Build security and trust. Enable privacy for yourself and others.
 
 We want to do things such as these, and to do that we want to use open tools. To this end we want to add to the great work of others in the open-source community by providing more tools, more information and more resources.
 
