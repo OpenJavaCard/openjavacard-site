@@ -24,6 +24,8 @@ Who?
 
 We are a group of smart card professionals and interested hackers. Anyone may contribute to the project. All our work will be public and free. We will also gladly support research and academic projects as our resources permit.
 
+This project is an open-source project in the classical sense of the word. Project leadership is currently by benevolent dictatorship with an abundance of good intentions and little time for squabbles.
+
 .. toctree::
    :hidden:
 
