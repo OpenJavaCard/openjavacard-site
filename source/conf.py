@@ -131,6 +131,7 @@ html_theme_options = {
     'navbar_pagenav': False,
     'navbar_sidebarrel': False,
     'navbar_links': [
+        ('Chat', 'https://gitter.im/OpenJavaCard/general', True),
         ('GitHub', 'https://github.com/OpenJavaCard/', True),
         ('Twitter', 'https://twitter.com/openjavacardorg', True),
     ],

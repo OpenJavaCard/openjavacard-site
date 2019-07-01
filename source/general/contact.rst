@@ -7,14 +7,21 @@ You can contact us about technical issues, project ideas or anything else that m
 
 We are especially keen on connecting with smart card developers and hardware vendors.
 
-E-Mail
-------
+Chat
+----
 
-You can contact us at CONTACT -at- OPENJAVACARD -dot- ORG.
+We have a chat on Gitter under `OpenJavaCard <https://gitter.im/OpenJavaCard/general>`_.
 
-We are all busy people. Please expect some delay in our response.
+Anyone interested in open JavaCard development can join the discussion.
 
-Feel free to use our :download:`PGP key <../pgp/ojc-contact-2019.asc>` for secure transport.
+Some project members are available for answering questions.
+
+Twitter
+-------
+
+You can follow us on Twitter under `@openjavacardorg <https://twitter.com/openjavacardorg>`_.
+
+We do accept direct messages, but don't expect a real-time response.
 
 GitHub
 ------
@@ -23,10 +30,12 @@ Development issues can be submitted at our various `GitHub projects <https://git
 
 We accept bug reports, suggestions and code contributions.
 
-Twitter
--------
+E-Mail
+------
 
-You can follow us on Twitter under `@openjavacardorg <https://twitter.com/openjavacardorg>`_.
+You can contact us at CONTACT -at- OPENJAVACARD -dot- ORG.
 
-We do accept direct messages, but don't expect a real-time response.
+We are all busy people. Please expect some delay in our response.
+
+Feel free to use our :download:`PGP key <../pgp/ojc-contact-2019.asc>` for secure transport.
 
