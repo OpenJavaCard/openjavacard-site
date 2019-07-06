@@ -123,21 +123,21 @@ Today smartcards are also integrated as components in devices with different for
 .. table:: Standards in the ISO 7816 series
    :widths: auto
 
-   ===========  =======================================================================  ================
+   ===========  =======================================================================  ==================
    Standard     Title                                                                    Relevance
-   ===========  =======================================================================  ================
-   ISO 7816-1   Cards with contacts - Physical characteristics                           Card production.
-   ISO 7816-2   Cards with contacts - Dimensions and location of the contacts            Card production.
-   ISO 7816-3   Cards with contacts - Electrical interface and transmission protocols    Card production.
-   ISO 7816-4   Organization, security and commands for interchange                      Common.
-   ISO 7816-5   Registration of application providers                                    Common.
-   ISO 7816-6   Interindustry data elements for interchange
-   ISO 7816-7   Interindustry commands for Structured Card Query Language (SCQL)         Rare.
-   ISO 7816-8   Commands and mechanisms for security operations
-   ISO 7816-9   Commands for card management
-   ISO 7816-10  Electronic signals and answer to reset for synchronous cards
-   ISO 7816-11  Personal verification through biometric methods
-   ISO 7816-12  Cards with contacts - USB electrical interface and operating procedures  Card production.
-   ISO 7816-13  Commands for application management in a multi-application environment
-   ISO 7816-15  Cryptographic information application
-   ===========  =======================================================================  ================
+   ===========  =======================================================================  ==================
+   ISO 7816-1   Cards with contacts - Physical characteristics                           Card production
+   ISO 7816-2   Cards with contacts - Dimensions and location of the contacts            Card production
+   ISO 7816-3   Cards with contacts - Electrical interface and transmission protocols    Card production
+   ISO 7816-4   Organization, security and commands for interchange                      App development
+   ISO 7816-5   Registration of application providers                                    App development
+   ISO 7816-6   Interindustry data elements for interchange                              App development
+   ISO 7816-7   Interindustry commands for Structured Card Query Language (SCQL)         Rare
+   ISO 7816-8   Commands and mechanisms for security operations                          Crypto apps
+   ISO 7816-9   Commands for card management                                             GlobalPlatform
+   ISO 7816-10  Electronic signals and answer to reset for synchronous cards             Card production
+   ISO 7816-11  Personal verification through biometric methods                          Rare
+   ISO 7816-12  Cards with contacts - USB electrical interface and operating procedures  Card production
+   ISO 7816-13  Commands for application management in a multi-application environment   GlobalPlatform
+   ISO 7816-15  Cryptographic information application                                    Crypto apps
+   ===========  =======================================================================  ==================
