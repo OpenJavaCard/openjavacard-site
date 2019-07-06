@@ -15,3 +15,5 @@ You will likely need some experience with Java development and a background in s
    hardware
    toolchain
    naming
+   books
+
