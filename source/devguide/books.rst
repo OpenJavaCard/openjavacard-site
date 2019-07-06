@@ -10,7 +10,20 @@ English
 
 Most development in the western world happens in English.
 
+.. list-table:: Smart Cards, Tokens, Security and Applications
+   :widths: 10 30
+
+   * - Title
+     - Smart Card Programming
+   * - Author
+     - Keith Mayes, Konstantinos Markantonakis
+   * - Published
+     - 2017
+   * - ISBN
+     - 978-3319504988
+
 .. list-table:: Smart Card Programming
+   :widths: 10 30
 
    * - Title
      - Smart Card Programming
@@ -22,21 +35,23 @@ Most development in the western world happens in English.
      - 978-1291610505
 
 .. list-table:: RFID Handbook
+   :widths: 10 30
 
    * - Title
-	 - RFID Handbook
+     - RFID Handbook
    * - Subtitle
-	 - Fundamentals and Applications in Contactless Smart Cards, Radio Frequency Identification and Near-Field Communication
+     - Fundamentals and Applications in Contactless Smart Cards, Radio Frequency Identification and Near-Field Communication
    * - Author
-	 - Klaus Finkenzeller
+     - Klaus Finkenzeller
    * - Language
-	 - English
+     - English
    * - Published
-	 - 2010
+     - 2010
    * - ISBN
-	 - 978-0470695067
+     - 978-0470695067
 
 .. list-table:: Smartcard development with JavaCard and the OpenCard Framework
+   :widths: 10 30
 
    * - Title
      - Smartcard development with JavaCard and the OpenCard Framework
@@ -52,19 +67,35 @@ Most development in the western world happens in English.
      - 978-3836499897
 
 .. list-table:: Multi-application Smart Cards: Technology and Applications
+   :widths: 10 30
 
    * - Title
-	 - Multi-application Smart Cards: Technology and Applications
+     - Multi-application Smart Cards: Technology and Applications
    * - Author
-	 - Mike Hendry
+     - Mike Hendry
    * - Language
-	 - English
+     - English
    * - Published
-	 - 2007
+     - 2007
    * - ASIN
-	 - B000SHU6AO
+     - B000SHU6AO
+
+.. list-table:: Smart Card Application Development Using Java
+   :widths: 10 30
+
+   * - Title
+     - Smart Card Application Development Using Java
+   * - Author
+     - Uwe Hansmann, Martin S. Nicklous, Thomas Schäck
+   * - Language
+     - English
+   * - Published
+     - 2002
+   * - ISBN
+     - 978-3540432029
 
 .. list-table:: Java Card Technology for Smart Cards
+   :widths: 10 30
 
    * - Title
      - Java Card Technology for Smart Cards
@@ -82,9 +113,10 @@ Most development in the western world happens in English.
 German
 ------
 
-Smart cards have originally been developed in Germany, and so we include books in German.
+Smart cards have originally been developed in Germany, so we include books in German.
 
 .. list-table:: RFID-Handbuch
+   :widths: 10 30
 
    * - Title
      - RFID-Handbuch
@@ -100,6 +132,7 @@ Smart cards have originally been developed in Germany, and so we include books i
      - 978-3446439436
 
 .. list-table:: Handbuch der Chipkarten
+   :widths: 10 30
 
    * - Title
      - Handbuch der Chipkarten
