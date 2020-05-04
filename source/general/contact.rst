@@ -37,5 +37,5 @@ You can contact us at CONTACT -at- OPENJAVACARD -dot- ORG.
 
 We are all busy people. Please expect some delay in our response.
 
-Feel free to use our :download:`PGP key <../pgp/ojc-contact-2019.asc>` for secure transport.
+Feel free to use our :download:`PGP key <../pgp/ojc-contact-2020.asc>` for secure transport.
 
