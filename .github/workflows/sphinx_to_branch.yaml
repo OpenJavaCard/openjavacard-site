@@ -10,4 +10,4 @@ jobs:
         with:
             token: ${{ secrets.GITHUB_TOKEN }}
             sphinx_src: 'source'
-			target_branch: 'gh-pages'
+            target_branch: 'gh-pages'
